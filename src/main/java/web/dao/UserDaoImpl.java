@@ -1,6 +1,7 @@
 package web.dao;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.model.User;
 
 import javax.persistence.EntityManager;
@@ -8,8 +9,7 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.List;
 
-@Component
-@Transactional
+@Repository
 public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
